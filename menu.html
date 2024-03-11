@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
+    <link href="https://fonts.cdnfonts.com/css/la-unica" rel="stylesheet">
+    <title>tienda</title>
+</head>
+<body>
+
+    
+    <style>
+        img{
+            width: 200px;
+            height: auto;
+        }
+        table, th,td{
+            border: 1px dotted rebeccapurple;
+        }
+        table{
+            width: 80%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            box-shadow: 0 5px 15px black;
+            margin-left: 50px;
+        }
+        th, th{
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even){
+            background-color: rgb(245, 0, 73);
+        }
+        tr:hover{
+            background-color: rgb(255, 82, 111);
+        }
+    </style>
+<div style="margin: 24px;">
+    <nav class="navbar navbar-light"
+    style="background-color: rgb(255, 0, 0);" >
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="color:rgb(255, 255, 255); font-family: 'La unica', sans-serif;">Inicio</a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-espanded="false">Unidad 1</a>
+                        <div class="dropdown-menu"
+                        aria-labelledby="navbarDripdownMenuLink">
+                        <a class="dropdown-item"
+                        href="perfil.html">Perfil</a><br>
+                        <a class="dropdown-item"
+                        href="calculadora.html">Calculadora</a><br>
+                       <a class="dropdown-item"
+                        href="tiendaparte1.html">Tienda parte 1</a><br>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-espanded="false">Unidad 2</a>
+                        <div class="dropdown-menu"
+                        aria-labelledby="navbarDripdownMenuLink">
+                        <a class="dropdown-item"
+                        href="tiendapedido.html">tienda Pedido</a><br>
+                        <a class="dropdown-item"
+                        href="jason.html">Json</a><br>
+                        <a class="dropdown-item"
+                        href="tiendapedido2.html">Tienda Pedido 2</a><br>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-espanded="false">Unidad 3</a>
+                        <div class="dropdown-menu"
+                        aria-labelledby="navbarDripdownMenuLink">
+                        <a class="dropdown-item"
+                        href="basededatos.html">Base de datos</a><br>
+                        <a class="dropdown-item"
+                        href="peliculas.html">Peliculas</a><br>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+       </div>
+    </nav>
+</div>
+<h1>Bebidas</h1>
+      <table>
+        <tr>
+            <th>Imagen</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td><img src="img/30.jpg" alt="Bebidas"> </td>
+            <td><p>refrescos </p></td>
+            <td>$40.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/29.jpg" alt="Bebidas"> </td>
+            <td><p> naranjada</p></td>
+            <td>$75.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/28.jpg" alt="Bebidas"> </td>
+            <td><p>aguas naturales</p></td>
+            <td>$80.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/27.jpg" alt="Bebidas"> </td>
+            <td><p>mugrero de vinos</p></td>
+            <td>$70.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/26.jpg" alt="Bebidas"> </td>
+            <td><p> aguas dulces</p></td>
+            <td>$50.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/25.jpg" alt="Bebidas"> </td>
+            <td><p> cerbeza de fokin perdedores</p></td>
+            <td>$40.00</td>
+        </tr>
+    </table> 
+<h2>Desayuno</h2>
+        <table>
+          <tr>
+              <th>Imagen</th>
+              <th>Descripcion</th>
+              <th>Precio</th>
+          </tr>
+          <tr>
+              <td><img src="img/24.jpg" alt="Almuerzos"> </td>
+              <td><p>desayuno con algo de carne y aguacate</p></td>
+              <td>$80.00</td>
+          </tr>
+          <tr>
+              <td><img src="img/23.jpg" alt="Almuerzos"> </td>
+              <td><p>hotcake tosino y pan</p></td>
+              <td>$75.00</td>
+          </tr>
+          <tr>
+              <td><img src="img/22.jpg" alt="Almuerzos"> </td>
+              <td><p>molletede aguacate y crema </p></td>
+              <td>$83.00</td>
+          </tr>
+          <tr>
+              <td><img src="img/21.jpg" alt="Almuerzos"> </td>
+              <td><p>emparedado con huevo</p></td>
+              <td>$85.00</td>
+          </tr>
+          <tr>
+              <td><img src="img/20.jpg" alt="Almuerzos"> </td>
+              <td><p>camarones impanisados y milanesa con ensalada</p></td>
+              <td>$75.00</td>
+          </tr>
+          <tr>
+              <td><img src="img/19.jpg" alt="Almuerzos"> </td>
+              <td><p>omelette con verdura</p></td>
+              <td>$70.00</td>
+          </tr>
+      </table> 
+<h2>Almuerzos</h2>
+      <table>
+        <tr>
+            <th>Imagen</th>
+            <th>Descripcion</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td><img src="img/18.jpg" alt="Comidas Aperitivos"> </td>
+            <td><p>arroz con pollo en salsa </p></td>
+            <td>$30.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/17.jpg" alt="Comidas Aperitivos"> </td>
+            <td><p>frojoles,bolas de arroz,papas y carne</p></td>
+            <td>$8.00 cd\u </td>
+        </tr>
+        <tr>
+            <td><img src="img/16.jpg" alt="Comidas Aperitivos"> </td>
+            <td><p>filete de carne bola de arroz y brocoli </p></td>
+            <td>$80.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/15.jpg" alt="Comidas Aperitivos"> </td>
+            <td><p> </p>caldo de carne mañanero</td>
+            <td>$55.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/14.jpg" alt="Comidas Aperitivos"> </td>
+            <td><p> garbanzo con carne papa y zanahoria</p></td>
+            <td>$40.00</td>
+        </tr>
+        <tr>
+            <td><img src="img/13.jpg" alt="Comidas Aperitivos"> </td>
+            <td><p>quesadilla con tomate y verdura</p></td>
+            <td>$55.00</td>
+        </tr>
+     </table> 
+<h2>Comida aperitiva</h2>
+     <table>
+       <tr>
+           <th>Imagen</th>
+           <th>Descripcion</th>
+           <th>Precio</th>
+       </tr>
+       <tr>
+           <td><img src="img/12.jpg" alt="Postres"> </td>
+           <td><p> rollos de carne y verdura </p></td>
+           <td>$45.00</td>
+       </tr>
+       <tr>
+           <td><img src="img/11.jpg" alt="Postres"> </td>
+           <td><p> nuggets y salchicha enrollada</p></td>
+           <td>$45.00</td>
+       </tr>
+       <tr>
+           <td><img src="img/10.jpg" alt="Postres"> </td>
+           <td><p> banderillas de verdura y carne</p></td>
+           <td>$50.00</td>
+       </tr>
+       <tr>
+           <td><img src="img/9.jpg" alt="Postres"> </td>
+           <td><p>pan tostdo con crema  vatida y vino</p></td>
+           <td>$25.00</td>
+       </tr>
+       <tr>
+           <td><img src="img/8.jpg" alt="Postres"> </td>
+           <td><p>palitos de queso con salsa ranch  </p></td>
+           <td>$40.00</td>
+       </tr>
+       <tr>
+           <td><img src="img/7.jpg" alt="Postres"> </td>
+           <td><p>tostadas de pure de papa y verdura</p></td>
+           <td>$50.00</td>
+       </tr>
+   </table> 
+<h2>Postres</h2>
+        <table>
+          <tr>
+              <th>Imagen</th>
+              <th>Descripcion</th>
+              <th>Precio</th>
+          </tr>
+          <tr>
+              <td><img src="img/6.jpg" alt="Bebidas"> </td>
+              <td><p> pan de limon  </p></td>
+              <td>$25.00</td>
+          </tr>
+          <tr>
+              <td><img src="img/5.jpg" alt="Bebidas"> </td>
+              <td><p>yogurt de frutas  </p></td>
+              <td>$35.00</td>
+          </tr>
+          <tr>
+              <td><img src="img/4.jpg" alt="Bebidas"> </td>
+              <td><p>pay de fresa con fambruesas</p></td>
+              <td>$25.00</td>
+          </tr>
+          <tr>
+              <td><img src="img/3.jpg" alt="Bebidas"> </td>
+              <td><p>Pay de queso</p></td>
+              <td>$120.00</td>
+          </tr>
+          <tr>
+              <td><img src="img/2.jpg" alt="Bebidas"> </td>
+              <td><p>postres variados</p></td>
+              <td>$25.00</td>
+          </tr>
+          <tr>
+              <td><img src="img/1.jpg" alt="Bebidas"> </td>
+              <td><p>brawnies magicos</p></td>
+              <td>$35.00</td>
+          </tr>
+      </table> 
+</body>
+</html>
