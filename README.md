@@ -1,4 +1,10 @@
-### Hi there 👋
+### Yeah
+Perdonen, Kamehameha
+Después del tema del Tetris viene el Dragon Ball Rap
+Quien no haya seguido esta serie es porque no tiene infancia
+Big Bang Attack ataca desde el Planeta Namek
+Vegeta, Son Goku, rivalidades Saiyan
+(Allargat bastó) y es que en castellano raya
 
 <!--
 **BennyAlexCGgithub/BennyAlexCGgithub** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
