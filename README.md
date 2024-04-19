@@ -1,4 +1,11 @@
-### La risa y el cariño son mucho más poderosas que el miedo
+###M
+Mira lo que has conseguido. ¡Es fantástico!
+Te está costando pero lo estás haciendo muy bien.
+Parece que disfrutas mucho haciendo eso.
+Te está saliendo muy bien. Sigue así.
+Es cierto que puedes mejorarlo. ...
+No me ha gustado lo que has hecho. ...
+Por supuesto que puedes mejorar.
 
 <!--
 **BennyAlexCGgithub/BennyAlexCGgithub** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
