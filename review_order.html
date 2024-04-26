@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
+    <title>review</title>
+</head>
+<body>
+<div style="margin: 24px;">
+    <nav class="navbar navar-ligth" style="background-color: rgb(231, 255, 16);">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="color: black;">INICIO</a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLInk" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Unidad 1</a>
+                        <div class="dropdown-menu" aria-describedby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="perfil.html">perfil</a><br>
+                            <a class="dropdown-item" href="calculadora.html">calculadora</a><br>
+                            <a class="dropdown-item" href="tienda.html">tienda parte 1</a><br>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLInk" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Unidad 2</a>
+                        <div class="dropdown-menu" aria-describedby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="tiendapedido.html">tienda pedido</a><br>
+                            <a class="dropdown-item" href="json.html">Json</a><br>
+                            <a class="dropdown-item" href="tiendapedido2.html">tienda pedido 2</a><br>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLInk" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Unidad 3</a>
+                        <div class="dropdown-menu" aria-describedby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="basededatos.html">base de datos</a><br>
+                            <a class="dropdown-item" href="peliculas.html">peliculas</a><br>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+  
+    <style>
+        body{
+            background-color: aquamarine;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        h1{
+            text-align: center;
+            text-shadow: 5px  5px cadetblue;
+        }
+        #confirmation{
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: aqua;
+            box-shadow: 20px 10px 10px green;
+            border-radius: 5px;
+        }
+        #confirmation label{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: block;
+            margin-top: 10px;
+            font-weight: bolder;
+        }
+        #confirmation input #confirmation  select{
+            width: calc(100%,  -20px);
+            padding: 10px;
+            margin-top: 5px;
+        }
+        #confirmation button{
+            width: auto;
+            margin-top: 10px 30px;
+            font-size: 18px;
+            display: block;
+            margin: 20px auto;
+            background-color: rgb(146, 235, 238);
+            border-radius: 10px;
+        }
+        #confirmation div{
+            margin-top: 15px;
+            padding: 8px;
+            background-color: darkblue;
+            border-radius: 5px;
+            font-size: 14px;
+            color: crimson;
+        }
+        #confirmation hr{
+            border-top: 2px solid #eeee;
+        }
+    </style>
+
+    <div style="margin: 24px;">
+    </div>
+    <h1>Confirmar pedido</h1>
+    <form id="confirmation">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre"  id="nombre"
+        placeholder="Nombre  y apellido"  required>
+        <label for="direccion">direccion</label>
+        <input type="text" name="direccion"  id="direccion"
+        placeholder="calle,  numero, colonia"  required>
+        <label for="telefono">telefono</label>
+        <input type="text" name="telefono"  id="telefono"
+        placeholder="xxx-xxx-xxx"  required>
+        <label for="email">E-mail</label>
+        <input type="email" name="email"  id="email"
+        placeholder="tuusuariodeservidor.com"  required>
+        <select name="paymenthethod" id="paymenthethod">
+             <option value="creditCard">Targeta de credito</option>
+             <option value="paypal">paypal</option>
+             <option value="efectivo">efectivo</option>
+    </select>
+             <button type="button" onclick="SubmitOrder()">Confirmar pedido</button>
+        
+    </form>
+    <script>
+        window.onload = function(){
+            const params = new URLSearchParams(window.location,search);
+            document.getElementById('confirmation').appendChild
+            (document.createElement('hr'));
+            for(const [key,value] of params.entries()){
+            const infoDiv = document.createElement('div');
+            infoDiv.textContent  = `${key}: ${value}`;
+            document.getElementById('confirmation'), appendChild(infoDiv);
+
+            const hiddenInput  = document.createElement ('input');
+            hiddenInput.type = 'hidden';
+            hiddenInput.name = key;
+            hiddenInput.value  = value  =  value;
+            document.getElementById ('confirmation').appendChild (hiddenInput);
+            }};
+          function  SubmitOrder(){}
+          const formElements = document.getElementById('confirmation');
+          const formData =  new  formData  (formElements);
+          const queryParams = new URLSearchParams();
+          for  (let [key,  value] of formData.entries()){
+            queryParams.append(key,value);
+            window.location.href =  `submit_order.html?${queryParams} `;
+          }
+            
+            
+        
+    </script>
+</body>
+</html>
