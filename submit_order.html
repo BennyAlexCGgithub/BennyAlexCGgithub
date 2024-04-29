@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        font-family: 'Courier New', Courier, monospace;
+        background-color: coral;
+        margin: 0;
+        padding: 20px;
+        color: blue;
+
+    }
+    h1{
+        color: azure;
+        text-shadow: 5px 5px 4px red;
+        text-align: center;
+
+    }
+    form, #resumenpedido{
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 1px gray;
+        padding: 20px;
+        margin-top: 20px;
+
+    }
+    input[type="text"],input[type="email"],select{
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 16px;
+        border: 1px solid white;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+</style>
+
+<body>
+    <div style="margin: 24px;">
+        <nav class="navbar navar-ligth" style="background-color: rgb(231, 255, 16);">
+            <div class="container">
+                <a class="navbar-brand" href="index.html" style="color: black;">INICIO</a>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLInk" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Unidad 1</a>
+                            <div class="dropdown-menu" aria-describedby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="perfil.html">perfil</a><br>
+                                <a class="dropdown-item" href="calculadora.html">calculadora</a><br>
+                                <a class="dropdown-item" href="tienda.html">tienda parte 1</a><br>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLInk" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Unidad 2</a>
+                            <div class="dropdown-menu" aria-describedby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="tiendapedido.html">tienda pedido</a><br>
+                                <a class="dropdown-item" href="json.html">Json</a><br>
+                                <a class="dropdown-item" href="tiendapedido2.html">tienda pedido 2</a><br>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLInk" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Unidad 3</a>
+                            <div class="dropdown-menu" aria-describedby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="basededatos.html">base de datos</a><br>
+                                <a class="dropdown-item" href="peliculas.html">peliculas</a><br>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+</body>
+<div style="margin: 24px;">
+</div>
+<h1>Resumen pedido</h1>
+<div class="resumenpedido"></div>
+</html>
