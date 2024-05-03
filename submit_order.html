@@ -42,6 +42,34 @@
         border-radius: 5px;
         box-sizing: border-box;
     }
+    button{
+        background-color: blue;
+        color: aliceblue;
+        padding: 14px 20px;
+        margin: 8px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+    }
+    button:hover{
+        background-color: green;
+    }
+    hr{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 0;
+        border-top: 1px solid white;   
+    }
+    #resumenpedido p{
+        font-size: 16px;
+        line-height: 1.5;
+        padding: 8px;
+        border-bottom: 1px solid whitesmoke;
+    }
+    #resumenpedido p:last-child{
+        border-bottom: none;
+    }
 </style>
 
 <body>
@@ -88,4 +116,15 @@
 </div>
 <h1>Resumen pedido</h1>
 <div class="resumenpedido"></div>
+<script>
+    window.onload = function(){
+        const Params = new URLSearchParams(window.location.search);
+        const resumenpedido = document.getElementById('resumenpedido');
+        for(const [key,value] of Params. entries()){
+            const detail = document.createElement('p');
+            detail.textContent = `${key}:${value}`;
+            resumenpedido.appendChild(detail);
+        }
+    };
+</script>
 </html>
